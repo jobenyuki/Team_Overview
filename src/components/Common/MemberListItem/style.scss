@@ -1,0 +1,68 @@
+.member-list-item {
+  padding: 10px;
+  border-radius: 5px;
+  background: white;
+  color: gray;
+  box-shadow: 0 5px 10px grey;
+  animation: fadeIn 1s;
+
+  &__label-group {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  &__label {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  &__member-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__name {
+    margin-top: 10px;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 1.2rem;
+
+    &:hover {
+      color: #0086c2;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  &__date-joined {
+    color: darkgray;
+    font-size: 0.8rem;
+  }
+
+  &__title {
+    font-size: 0.9rem;
+  }
+
+  &__avatar {
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 2rem;
+  }
+}
+
+@keyframes fadeIn {
+
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

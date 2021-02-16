@@ -1,0 +1,100 @@
+.team-list-item {
+  padding: 10px;
+  border-radius: 5px;
+  background: white;
+  color: gray;
+  box-shadow: 0 5px 10px grey;
+  animation: fadeIn 1s;
+
+  &__label-group {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  &__label {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  &__name {
+    margin-top: 10px;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 1.2rem;
+
+    &:hover {
+      color: #0086c2;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  &__date-created {
+    color: darkgray;
+    font-size: 0.8rem;
+  }
+
+  &__description {
+    font-size: 0.9rem;
+  }
+
+  &__members {
+    display: flex;
+    align-items: center;
+  }
+
+  &__lead-avatar {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    padding: 5px;
+    font-size: 0.8rem;
+  }
+
+  &__lead-name {
+    margin-right: 10px;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 0.9rem;
+
+    &:hover {
+      color: #0086c2;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  &__member-count {
+    color: darkgray;
+    font-size: 0.8rem;
+  }
+
+  &__keywords {
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+
+    & > * {
+      margin-right: 10px;
+      font-size: 12px;
+    }
+  }
+
+  &__keyword {
+    padding: 5px 10px;
+  }
+}
+
+@keyframes fadeIn {
+
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
