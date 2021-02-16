@@ -1,0 +1,64 @@
+.member-list {
+  position: relative;
+  width: 100%;
+  height: 85%;
+
+  &__team-title {
+    text-align: center;
+  }
+
+  &__back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: none;
+    background: none;
+    outline: none;
+
+    &:hover {
+      color: #0086c2;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  &__loading,
+  &__error {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+  }
+
+  &__search-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__auto-sizer {
+    padding: 10px 0;
+  }
+
+  &__list {
+    width: 100%;
+    height: 100%;
+    outline: none;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    width: 250px;
+    height: 300px;
+    margin: 5px;
+  }
+}

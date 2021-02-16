@@ -1,0 +1,11 @@
+.layout {
+  display: flex;
+  align-items: flex-start;
+
+  & .notification-container {
+
+    & .notification {
+      box-shadow: none;
+    }
+  }
+}
